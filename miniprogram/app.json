@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logistics/logistics",
+    "pages/gototalkpage/gototalkpage"
+  ],
+  "window": {
+    "backgroundColor": "#f6f6f6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4169E1",
+    "navigationBarTitleText": "物流状态反馈",
+    "navigationBarTextStyle": "white"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于定位"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

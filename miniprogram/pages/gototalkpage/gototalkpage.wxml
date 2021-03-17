@@ -1,0 +1,26 @@
+<view class="container">
+  <view class="message">
+    <text class="leftText">反馈状态：</text>
+    <picker class="rightText" bindchange="bindPickerChange" value="{{index}}" range="{{stateData}}">
+      <text data-pid="{{stateData}}">{{stateData[index]}}</text>
+    </picker>
+  </view>
+ 
+    <textarea placeholder="请输入说明,80个汉字内"></textarea>
+
+  <view class="message2">
+    <text class="num">已扫描运单号:</text>
+    <button class="clear" bindtap="clear">清空列表</button>
+  </view>
+
+  <view class="num-data" wx:for="{{result}}" wx:for-index="key"  wx:for-item="value">
+  <view class="data">
+    {{value}}
+  </view>
+  <image class="delete" src="../../images/delete.png" bindtap="delete" data-num="{{key}}"></image>
+  </view>
+  <view class="footer">
+    <button class="footerBtn1" bindtap='getScancode'>扫码</button>
+    <button class="footerBtn2" bindtap="submit">提交反馈</button>
+  </view>
+</view>

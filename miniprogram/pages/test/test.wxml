@@ -1,0 +1,14 @@
+<view class="container">
+  <image class="picture" src="../../images/index.png" />
+  <view class="search">
+    <view class="icon">
+      <icon type='search'  size='20'></icon>
+    </view>
+    <input type="text" placeholder="精确搜索订单"/>
+    
+    <image class="scan" src="../../images/scan.png" bindtap='getScancode'></image>
+  </view>
+  <view class="footer">
+    <button class="footerBtn">批量快扫</button>
+  </view>
+</view>
